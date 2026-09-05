@@ -11,4 +11,4 @@ The website consists of 5 web pages:
 3.Core Members(with their respective Insta handles
 4.Events page(Memories)
 
-The default VS code IntelliSense was used.
+The Github Copilot only filled up the statements for us.
