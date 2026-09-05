@@ -1,0 +1,172 @@
+        @font-face {
+            font-family: 'Nonsense';
+            src: url('Nonsense.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Dystopian-Canticle-Regular';
+            src: url('Dystopian-Canticle-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Nonsense', sans-serif;
+            letter-spacing: 0.1em;
+        }
+
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTykHBOPxPBygUKYAfbQuKyeRkG1a1RPfDI7tQAmq7wrg&s=10);
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            margin: 0.8em;
+            font-size: 1.2em;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .welcome .logo {
+
+            width: 10.5em;
+            height: 10.5em;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            animation: rotateMotion 4s linear infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes rotateMotion {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+
+        }
+
+        .welcome h1 {
+
+            font-size: 2.5em;
+            color: aliceblue;
+            height: 90vh;
+            text-align: center;
+            white-space: wrap;
+            animation: fadeIn 4s ease-in-out;
+            margin-top: 0.3em;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .welcome p {
+            font-family: 'Dystopian-Canticle-Regular', sans-serif;
+            font-size: 2.8em;
+            color: rgb(244, 201, 84);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            white-space: wrap;
+            width: 75%;
+            margin: .8em;
+            animation: movement 4s ease-in-out;
+
+        }
+
+        @keyframes movement {
+            0% {
+                transform: translateY(0.3em);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .welcome em {
+            font-size: 1.6em;
+            color: rgb(255, 187, 1);
+        }
+
+
+        @media (max-width: 780px) {
+            .welcome .logo {
+                width: 7.5em;
+                height: 7.5em;
+                margin-bottom: 1.5em;
+            }
+
+            .welcome h1 {
+                font-size: 1.8em;
+                margin-bottom: 0.8em;
+            }
+
+            .welcome p {
+                font-size: 1.5em;
+                width: 90%;
+            }
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
