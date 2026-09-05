@@ -1,0 +1,55 @@
+body
+{
+   background-image: url("Screenshot 2026-09-05 at 9,08,09 PM-Picsart-AiImageEnhancer.png");
+   background-size: cover;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   
+}
+
+@keyframes fadeSlideUp
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+@font-face
+{
+    font-family: "Wendy One-Regular";
+    src: url("WendyOne-Regular.ttf")format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.Title
+{
+    font-family: "Wendy One-Regular";
+    font-size: 65px;
+    text-align: center;
+}
+
+.Heads
+{
+    font-family: "Wendy One-Regular";
+    font-size: 35px;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(243, 234, 234);
+    animation: fadeSlideUp 3s ease forwards;
+    line-height: 1;
+    }
+img {
+    border-radius: 50%;
+}
